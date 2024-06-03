@@ -5,10 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "nodemon src/app.js",
-    "test": "nodemon test/test.app.js --watch test/*",
-    "build": "npm install && npm run copy-files",
-    "create-dist": "mkdir dist",
-    "copy-files": "xcopy /E /I src dist"
+    "test": "nodemon test/test.app.js --watch test/*"
   },
   "author": "Josselyn",
   "license": "ISC",
