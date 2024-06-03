@@ -6,9 +6,9 @@
   "scripts": {
     "start": "nodemon src/app.js",
     "test": "nodemon test/test.app.js --watch test/*",
-    "build": "npm install && npm run create-dist && npm run copy-files",
+    "build": "npm install && npm run copy-files",
     "create-dist": "mkdir dist",
-    "copy-files": "cp -r src/* dist/"
+    "copy-files": "xcopy /E /I src dist"
   },
   "author": "Josselyn",
   "license": "ISC",
