@@ -1,6 +1,6 @@
 const express = require('express') //importando express
 const app = express()
-const socket = require('socket.io')
+const socket = require('../src/socket.io')
 const serverless = require('serverless-http');
 const port = 5500
 
