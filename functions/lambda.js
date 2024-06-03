@@ -43,5 +43,4 @@ app.get('/', (req, res) => {
     }
     res.render('index', data)
 })
-require('../src/socket')(io)
 module.exports.handler = serverless(app)
