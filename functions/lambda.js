@@ -1,6 +1,6 @@
 const express = require('express') //importando express
 const app = express()
-const socket = require('../src/socket.io')
+const socket = require('socket.io')
 const serverless = require('serverless-http');
 const port = 5500
 
@@ -28,7 +28,7 @@ const server = require('http').createServer(app)
 //socket
 const io = socket(server)
 
-require('./socket')(io)
+require('../src/socket')(io)
 
 server.listen(port, ()=>{
     console.log('Aplicacion con express ejecutsndose en el puerto 5500')
