@@ -43,4 +43,6 @@ app.get('/', (req, res) => {
     }
     res.render('index', data)
 })
-module.exports.handler = serverless(app)
+
+app.use('/.netlify/functions/lambda', app);
+export const handler = serverless(app);
